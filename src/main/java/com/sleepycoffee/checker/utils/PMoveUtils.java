@@ -1,7 +1,5 @@
 package com.sleepycoffee.checker.utils;
-import cs540.checkers.*;
-
-import java.util.*;
+import java.util.List;
 
 import com.sleepycoffee.checker.MutableMove;
 
