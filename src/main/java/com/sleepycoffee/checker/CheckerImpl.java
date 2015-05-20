@@ -1,4 +1,5 @@
 package com.sleepycoffee.checker;
+
 import static com.sleepycoffee.checker.beans.CheckersConsts.BLK;
 import static com.sleepycoffee.checker.beans.CheckersConsts.RED;
 
@@ -27,8 +28,8 @@ import com.sleepycoffee.checker.utils.Utils;
  * @author Justin Tritz
  * @author David He
  */
-public class Checkers 
-{
+public class CheckerImpl implements Checker {
+	
     public CheckersPlayer[] cp;
     public boolean[] moveOnClick;
     public long[] turnLimit;
@@ -44,7 +45,7 @@ public class Checkers
     /**
      * Constructs a new Checkers with default values for all options.
      */
-    public Checkers()
+    public CheckerImpl()
     {
         cp = new CheckersPlayer[] { null, null };
         moveOnClick = new boolean[] { false, false };
@@ -100,8 +101,8 @@ public class Checkers
      * @param args     the list of command line arguments
      * @throws IllegalArgumentExpection if <code>args</code> includes unknown options
      */
-    public void parseOptions(String[] args) throws IllegalArgumentException
-    {
+    public void parseOptions(String[] args) throws IllegalArgumentException {
+    	
         if (args.length < 2)
             throw new IllegalArgumentException();
 
@@ -187,51 +188,12 @@ public class Checkers
         }
     }
 
-    private static String help_str = 
-            "Usage: java -jar Checkers.jar <red_player> <blk_player> [OPTION]...\n" +
-            "Starts a checker game with <red_player> and <blk_player> specifying the\n" +
-            "abbreviated class names of the red and black checkers players, respectively.\n"+
-
-            "Optional parameters include:\n" +
-            "--turntime <turnLimit>      Sets how long computer players are allowed to think. (milliseconds)\n" + 
-            "--step                      Require a mouse click before the start of each turn.\n" +
-            "--verbose                   Print output loquaciously.\n" +
-            "--disable-turn-delay        Disable the READY -> WAITING turn delay.\n" +
-            "--initbs <filename>         Read the initial board state from <filename>.\n" +
-            "--initside <side>           Sets side to be the first to move.\n" +
-            "--depthlimit <redDepthLimit> <blkDephLimit>\n" +
-            "                            Sets the maximum iterative depth of iterative deepening for each player\n" +
-            "--nogui                     Do not launch a GUI\n" +
-            "--logfile                   Append to the specified log file\n" +
-            //"--help: Show this message.\n" +
-            "";
-
-    /**
-     * This is the main method where the program will begin execution.
-     */
-    public static void main(String[] args)
-    {
-        /* Get default options */
-        Checkers checkers = new Checkers();
-
-        /* Override default options by parsing command line arguments */
-        try {
-            checkers.parseOptions(args);
-        } catch (IllegalArgumentException e) {
-            System.out.println(help_str);
-            System.exit(1);
-        }
-
-        /* Go! */
-        checkers.init();
-    }
-
     /**
      * Constructs objects necessary for a checkers game to function, and
      * launches a GUI to interact with the game.
      */
-    public void init()
-    {
+    public void init() {
+    	
         /* Set global verbosity */
         Utils.verbose = verbose;
 
