@@ -1,4 +1,4 @@
-package cs540.checkers;
+package com.sleepycoffee.checker;
 
 import java.util.Timer;
 import java.util.TimerTask;

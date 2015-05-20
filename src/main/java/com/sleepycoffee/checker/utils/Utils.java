@@ -19,12 +19,11 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Stack;
 
+import com.sleepycoffee.checker.BoardState;
+import com.sleepycoffee.checker.Move;
+import com.sleepycoffee.checker.MutableMove;
 import com.sleepycoffee.checker.beans.CheckersConsts;
 import com.sleepycoffee.checker.exception.FormatException;
-
-import cs540.checkers.BoardState;
-import cs540.checkers.Move;
-import cs540.checkers.MutableMove;
 
 /**
  * This class provides a set of static utility methods for the game of checkers.

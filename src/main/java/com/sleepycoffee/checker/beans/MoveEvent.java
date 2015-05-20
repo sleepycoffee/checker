@@ -2,7 +2,7 @@ package com.sleepycoffee.checker.beans;
 
 import java.util.EventObject;
 
-import cs540.checkers.Move;
+import com.sleepycoffee.checker.Move;
 
 /**
  * MoveEvent is used to notify interested parties that a move has been selected.

@@ -19,12 +19,11 @@ import javax.swing.SwingUtilities;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
+import com.sleepycoffee.checker.CheckersController;
+import com.sleepycoffee.checker.CheckersModel;
 import com.sleepycoffee.checker.ui.CheckersBoardModel;
 import com.sleepycoffee.checker.ui.CheckersUIController;
 import com.sleepycoffee.checker.utils.Utils;
-
-import cs540.checkers.CheckersController;
-import cs540.checkers.CheckersModel;
 
 /**
  * CheckersUI is the user interface of the Checkers program. <code>CheckersModel</code>,

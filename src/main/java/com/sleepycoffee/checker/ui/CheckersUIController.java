@@ -2,8 +2,8 @@ package com.sleepycoffee.checker.ui;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import cs540.checkers.CheckersController;
-import cs540.checkers.CheckersModel;
+import com.sleepycoffee.checker.CheckersController;
+import com.sleepycoffee.checker.CheckersModel;
 
 /**
  * This controller extends {@link CheckersController CheckersController} by 

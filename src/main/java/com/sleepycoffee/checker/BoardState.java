@@ -1,4 +1,4 @@
-package cs540.checkers;
+package com.sleepycoffee.checker;
 import static com.sleepycoffee.checker.beans.CheckersConsts.BLANK;
 import static com.sleepycoffee.checker.beans.CheckersConsts.BLK_KING;
 import static com.sleepycoffee.checker.beans.CheckersConsts.BLK_PAWN;

@@ -1,8 +1,7 @@
 package com.sleepycoffee.checker.player;
 
+import com.sleepycoffee.checker.Move;
 import com.sleepycoffee.checker.utils.Utils;
-
-import cs540.checkers.Move;
 
 /**
  * This abstract class provides a context for a checkers player to calculate

@@ -3,8 +3,8 @@ package com.sleepycoffee.checker.listener;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import cs540.checkers.CheckersController;
-import cs540.checkers.CheckersModel;
+import com.sleepycoffee.checker.CheckersController;
+import com.sleepycoffee.checker.CheckersModel;
 
 /**
  * This text-only user interface shows a checkers game without graphics. This

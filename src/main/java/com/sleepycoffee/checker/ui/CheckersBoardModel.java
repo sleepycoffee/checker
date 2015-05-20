@@ -14,14 +14,13 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 import javax.swing.event.EventListenerList;
 
+import com.sleepycoffee.checker.Move;
+import com.sleepycoffee.checker.MutableMove;
 import com.sleepycoffee.checker.beans.MoveEvent;
 import com.sleepycoffee.checker.listener.CheckersBoard;
 import com.sleepycoffee.checker.listener.MoveListener;
 import com.sleepycoffee.checker.utils.PMoveUtils;
 import com.sleepycoffee.checker.utils.Utils;
-
-import cs540.checkers.Move;
-import cs540.checkers.MutableMove;
 
 /**
  * This is the model of the {@link CheckersBoard CheckersBoard} widget. 

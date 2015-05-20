@@ -3,6 +3,8 @@ import cs540.checkers.*;
 
 import java.util.*;
 
+import com.sleepycoffee.checker.MutableMove;
+
 /**
  * This class contains static methods used for computing partial moves.
  * @author David He

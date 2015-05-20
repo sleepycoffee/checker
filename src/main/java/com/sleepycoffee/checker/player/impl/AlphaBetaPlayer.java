@@ -11,13 +11,12 @@ import static com.sleepycoffee.checker.beans.CheckersConsts.BLK;
 
 import java.util.List;
 
+import com.sleepycoffee.checker.BoardState;
+import com.sleepycoffee.checker.Move;
 import com.sleepycoffee.checker.evaluator.BetterEvaluator;
 import com.sleepycoffee.checker.player.CheckersPlayer;
 import com.sleepycoffee.checker.player.GradedCheckersPlayer;
 import com.sleepycoffee.checker.utils.Utils;
-
-import cs540.checkers.BoardState;
-import cs540.checkers.Move;
 
 /*
  * This is a skeleton for an alpha beta checkers player. Please copy this file

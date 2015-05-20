@@ -1,10 +1,9 @@
 package com.sleepycoffee.checker.player.impl;
 import java.util.List;
 
+import com.sleepycoffee.checker.Move;
 import com.sleepycoffee.checker.player.CheckersPlayer;
 import com.sleepycoffee.checker.utils.Utils;
-
-import cs540.checkers.Move;
 
 /**
  * This checkers player selects moves uniformly at random from its legal moves. 

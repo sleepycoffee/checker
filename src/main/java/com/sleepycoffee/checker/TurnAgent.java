@@ -1,4 +1,4 @@
-package cs540.checkers;
+package com.sleepycoffee.checker;
 
 import com.sleepycoffee.checker.player.CheckersPlayer;
 
